@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jaro:opsz@6..72&family=Noto+Sans+TC:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sedan+SC&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* color: rgb(34, 34, 34); */
+    ---color: rgb(83, 83, 83);
+    ---hoverColor: black;
+}
+
+
+body {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.nav {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding-bottom: 5px;
+    /* box-shadow: 0px 0px 8px .9px rgba(0, 0, 0, 0.377); */
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+.logoSvg,
+.icon {
+    fill: rgb(94, 94, 94);
+    width: 45px;
+    transition: all .6s;
+}
+
+a {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.icon {
+    width: 30px;
+}
+
+.logo:hover,
+.logo:hover .logoSvg,
+.icon:hover {
+    transition: all .4s ease-in-out;
+    fill: var(---hoverColor);
+    color: var(---hoverColor);
+}
+
+.links {
+    display: flex;
+    gap: 15px;
+}
+
+.link {
+    transition: color .4s ease-in-out;
+    color: var(---color);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.link:hover {
+    color: var(---hoverColor);
+}
+
+/* Hidden Menu */
+
+
+.tools {
+    scroll-snap-align: start;
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
+}
+
+.link3 {
+    justify-content: center;
+    height: 100%;
+}
+
+
+.heroSection {
+    scroll-snap-align: start;
+    background: black;
+    background: url("/images/img2.png");
+    background-position: top;
+    background-size: cover;
+    opacity: .9;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    animation: fade 4s ease-in-out infinite alternate;
+}
+
+@keyframes fade {
+    to {
+        background-position: bottom;
+        opacity: 1;
+    }
+}
+
+.salutations {
+    position: absolute;
+    bottom: 40px;
+    left: 120px;
+}
+
+.greetings {
+    font-size: 40px;
+}
+
+.more {
+    font-size: 25px;
+}
+
+.link2 {
+    font-size: 30px;
+    padding-inline: 5px;
+    width: max-content;
+    color: var(---hoverColor);
+    background: var(---hoverColor);
+    transition: all .5s ease-in-out;
+}
+
+.greetings,
+.more,
+.link2 {
+    color: white;
+}
+
+.link2:hover {
+    mix-blend-mode: luminosity;
+    color: var(---hoverColor);
+    background: white;
+    padding-inline: 10px;
+}
+
+.sponsors {
+    scroll-snap-align: start;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 2000px;
+    /* background: black; */
+    gap: 25px;
+    font-size: 18px;
+    text-shadow: 0px 0px 14px 0.5px black;
+}
+
+
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+    background: white;
+    color: white;
+}
+
+
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8 {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 {
+    background: url("/images/img1.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.card2 {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    /* flex-direction: column;
+                    justify-content: center;
+                    align-items: center; */
+}
+
+.card3 {
+    background: url("/images/img3.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.card4 {
+    background-size: cover;
+    background-position: center;
+}
+
+.card5 {
+    background: url("/images/img2.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.card6 {
+    background-size: cover;
+    background-position: center;
+}
+
+.card7 {
+    background: url("/images/img4.png");
+    background-size: cover;
+    background-position: top;
+}
+
+.card8 {
+    background-size: cover;
+    background-position: center;
+}
+
+/* .card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover,
+.card8:hover {
+ */
+.card1:hover,
+.card3:hover,
+.card5:hover,
+.card7:hover{
+    cursor: pointer;
+    transition: all.4s ease-in-out;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.349);
+    border-top-right-radius: 5px;
+}
+
+.getInfo{
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.178);
+    padding-inline: 5px;
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin-inline: auto;
+    /* align-items: center; */
+}
+
+.getInfo input{
+    border: 1px blue;
+        font-size: 18px;
+}
+
+.getInfo button{
+    background: black;
+    color: white;
+    font-size: 20px;
+    border: 0px;
+    transition: all.4s ease-in-out;
+    cursor: pointer;
+}
+
+.getInfo button:hover{
+    background: white;
+    color: black;
+}
+
+.getInfoIcon{
+    width: 40px;
+    margin-inline: auto;
+}
+
+.footer{
+    padding-block: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    background: rgb(32, 32, 32);
+    color:white;
+        height: 300px;
+}
+
+@media (width<350px) {
+    .links{
+        display: none;
+    }
+.salutations {
+    left: 20px;
+}
+}
+
+@media (max-width=500px) {
+.links{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+}
