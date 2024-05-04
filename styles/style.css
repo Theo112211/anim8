@@ -204,7 +204,7 @@ a {
 }
 
 .card1 {
-    background: url("/images/img1.png");
+    background: url("images/img1.png");
     background-size: cover;
     background-position: top;
 }
